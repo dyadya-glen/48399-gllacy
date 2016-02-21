@@ -5,14 +5,14 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
-	  	<div class="content-wrapper">   
+	  	<div class="content-wrapper">
 				<header class="main-header clearfix">
               <div class="logo">
                 <img src="img/logo.svg" alt="Gllacy-Shop" width="154" height="64">
@@ -76,12 +76,12 @@
 							<a href="#" class="btn cart__order">Оформить заказ</a>
 							</div>
 						</div>
-						<p>
-							С 10 до 20, ежедневно <br>
-							<span>
-								8 812 450-25-25
-							</span>
-						</p>
+            <p class="opening-hours">
+              С 10 до 20, ежедневно
+              <span>
+                8&nbsp;812 450-25-25
+              </span>
+            </p>
 					</div>
 				</header>
         <section class="slider">
@@ -102,7 +102,7 @@
             <label for="btn-2"></label>
             <label for="btn-3"></label>
           </div>
-        </section>    
+        </section>
 
 				<section class="banners clearfix">
 					<article class="banner banner-left">
@@ -133,7 +133,7 @@
 						</div>
 						<a class="product__title" href="#">
 							<span>Сливочно-кофейное с кусочками шоколада</span>
-						</a>						
+						</a>
 					</article>
 					<article class="product">
 						<div class="image flag">
@@ -151,7 +151,7 @@
 						</div>
 						<a class="product__title" href="#">
 							<span>Сливочное крем-брюле с карамельной подливкой</span>
-						</a>						
+						</a>
 					</article>
 				</section>
 				<section class="seo clearfix">
@@ -180,16 +180,16 @@
 								</div>
 							</div>
 						</form>
-					</div>					
+					</div>
 				</section>
 			</div>
-			<div class="map-wrapper" id="yandex-map">   
+			<div class="map-wrapper" id="yandex-map">
 				<div class="content-wrapper">
 					<div class="contacts-info">
 						<p>Адрес главного офиса и<br>офлайн магазина:<br>
 						<b class="contacts">ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
 						<p class="contacts-tel">Для заказов по телефону:<br>
-						<b class="contacts">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>		
+						<b class="contacts">8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
 						<a class="btn contacts-btn" href="#">Форма обратной связи</a>
 					</div>
 				</div>
@@ -215,7 +215,7 @@
 						Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2016
 					</section>
 				</footer>
-			</div> 
+			</div>
     </div>
 
     <div class="form-feedback">
@@ -223,25 +223,25 @@
     		<div class="close"></div>
     		<h2 class="feedback-popup__title">Мы обязательно вам ответим!</h2>
     		<form action="https://echo.htmlacademy.ru" method="post">
-    		
+
     			<input id="us-nam" type="text" name="user-name" required>
-    			
+
 					<div class="wrapper-placeholder">
 						<label class="placeholder-name" for="us-nam">Как вас зовут ?</label>
 					</div>
-   			
+
     			<input id="fb-email" type="text" name="user-mail" required>
-    			
+
 					<div class="wrapper-placeholder">
 						<label class="placeholder-email" for="fb-email">Ваша почта для ответа ?</label>
 					</div>
-   			
+
     			<textarea name="user-spam" id="spam" required></textarea>
-    			
+
 					<div class="wrapper-placeholder">
 						<label class="placeholder-spam" for="spam">Напишите что-нибудь...</label>
 					</div>
-   			
+
     			<button class="feedback-btn btn" type="submit" name="feedback-email">Отправить</button>
     		</form>
     	</div>

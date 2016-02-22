@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="site-wrapper site-wrapper--gradient">
-	  	<div class="content-wrapper">   
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+
+	<body>
+		<div class="site-wrapper site-wrapper--gradient">
+			<div class="content-wrapper">
 				<header class="main-header clearfix">
 					<div class="main-header__left-column clearfix">
 						<a href="index.html" class="logo">
@@ -19,7 +21,7 @@
 							<ul>
 								<li class="item-top item-top--inner list-nav"><span>Каталог</span>
 									<ul class="item-down">
-										<li><a href="#"><b class="new-items">Новинки</b></a></li>
+										<li><a href="#" class="link-new"><b class="new-items">Новинки</b></a></li>
 										<li class="item-down--inner">Сливочное</li>
 										<li><a href="#">Щербеты</a></li>
 										<li><a href="#">Фруктовый лед</a></li>
@@ -38,9 +40,9 @@
 					</div>
 					<div class="user-block">
 						<div class="search">
-								<form action="https://echo.htmlacademy.ru" method="post">
-									<input type="search" name="search" placeholder="Что ищем?">
-								</form>
+							<form action="https://echo.htmlacademy.ru" method="post">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>
 						</div>
 						<div class="user-input">
 							<a href="#">Вход</a>
@@ -56,49 +58,47 @@
 							<a class="cart__click" href="#">Пусто</a>
 							<div class="cart__list">
 								<table>
-								<tr class="row1">
-									<td><button class="cart__product-del" type="button" name="delede"></button></td>
-									<td class="img-product"></td>
-									<td class="cart__product-name">Пломбир с апельсиновым джемом </td>
-									<td class="cart__massa">1,5 кг</td>
-									<td class="cart__price">х 200 руб.</td>
-									<td>300 руб.</td>
-								</tr>
-								<tr class="row2">
-									<td><button class="cart__product-del" type="button" name="delede"></button></td>
-									<td class="img-product"></td>
-									<td class="cart__product-name">Клубничный пломбир с присыпкой из&nbsp;белого шоколада </td>
-									<td class="cart__massa">1,5 кг</td>
-									<td class="cart__price">х 300 руб.</td>
-									<td>450 руб.</td>
-								</tr>
-								<tr>
-									<td colspan="5">Итого:&nbsp;</td>
-									<td>750 руб.</td>
-								</tr>
+									<tr class="row1">
+										<td>
+											<button class="cart__product-del" type="button" name="delede"></button>
+										</td>
+										<td class="img-product"></td>
+										<td class="cart__product-name">Пломбир с апельсиновым джемом </td>
+										<td class="cart__massa">1,5 кг</td>
+										<td class="cart__price">х 200 руб.</td>
+										<td>300 руб.</td>
+									</tr>
+									<tr class="row2">
+										<td>
+											<button class="cart__product-del" type="button" name="delede"></button>
+										</td>
+										<td class="img-product"></td>
+										<td class="cart__product-name">Клубничный пломбир с присыпкой из&nbsp;белого шоколада </td>
+										<td class="cart__massa">1,5 кг</td>
+										<td class="cart__price">х 300 руб.</td>
+										<td>450 руб.</td>
+									</tr>
+									<tr>
+										<td colspan="5">Итого:&nbsp;</td>
+										<td>750 руб.</td>
+									</tr>
 								</table>
 								<a href="#" class="btn cart__order">Оформить заказ</a>
 							</div>
 						</div>
-						<p>
-							С 10 до 20, ежедневно <br>
-							<span>
-								8 812 450-25-25
-							</span>
+						<p class="opening-hours">С 10 до 20, ежедневно
+							<span>8&nbsp;812 450-25-25</span>
 						</p>
 					</div>
 				</header>
-
 				<div class="catalog-wrapper clearfix">
 					<div class="catalog-creamy clearfix">
 						<h1 class="catalog-creamy__title">Сливочное мороженое</h1>
 						<section class="catalog-creamy__filter clearfix">
-							
 							<form action="https://echo.htmlacademy.ru" method="post" name="catalog-creamy__filter">
-								
 								<div class="filter-sorting">
 									<label class="sorting__title title">Сортировка:</label>
-									<select name="choice" class="sorting__select">							
+									<select name="choice" class="sorting__select">
 										<option value="popular" selected>по популярности</option>
 										<option value="descending-pictures">сначала недорогие</option>
 										<option value="increasing-price">сначала дорогие</option>
@@ -106,10 +106,12 @@
 									</select>
 								</div>
 								<div class="filter-range">
-									<label class="min-range">Цена:<input type="text" name="min-gange" value="100">руб.
+									<label class="min-range">Цена:
+										<input type="text" name="min-gange" value="100">руб.
 									</label>
 									<span>–</span>
-									<label class="max-range"><input type="text" name="max-gange" value="500">руб.
+									<label class="max-range">
+										<input type="text" name="max-gange" value="500">руб.
 									</label>
 									<div class="range-control">
 										<div class="scale">
@@ -307,19 +309,12 @@
 						</div>
 					</div>
 				</div>
-
-			
 				<footer class="main-footer clearfix">
 					<section class="footer-social">
-						
 						<a href="#" class="social-btn social-btn-tw">Твиттере</a>
-						
 						<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-						
 						<a href="#" class="social-btn social-btn-vk">В Контакте</a>
-						
 						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-						
 					</section>
 					<section class="footer-nav">
 						<ul>
@@ -330,12 +325,13 @@
 						</ul>
 					</section>
 					<section class="footer-copyright">
-						<a href="https://htmlacademy.ru" class="htmlacademy-logo" target="_blank"><img src="img/logo-HtmlAcademy.svg" alt="HtmlAcademy"></a>
+						<a href="https://htmlacademy.ru" class="htmlacademy-logo" target="_blank"><img src="img/logo-htmlacademy.svg" alt="HtmlAcademy"></a>
 						Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2016
 					</section>
 				</footer>
-			</div> 
-    </div>
-    <script src="js/main.min.js"></script>
-  </body>
+			</div>
+		</div>
+		<script src="js/main.min.js"></script>
+	</body>
+
 </html>
